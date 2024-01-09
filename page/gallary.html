@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="gallary.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flickity@2.2.1/dist/flickity.min.css"
+    />
+    <!-- Correct way to include Tailwind CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <title>BBT|Home</title>
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <a href="tel:+919580094376">
+          <i class="fas fa-phone phone"></i> Contact- US on:+919580094376</a
+        >
+        <span
+          ><a href="https://wa.me/+919580094376">
+            <i class="fab fa-whatsapp whatsapp"></i> WhatsApp:+919580094376</a
+          >
+        </span>
+        <div class="social-media">
+          <li>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </li>
+        </div>
+      </div>
+      <nav id="menu">
+        <input
+          type="checkbox"
+          id="responsive-menu"
+          onclick="updatemenu()"
+        /><label></label>
+        <ul>
+          <li><a href="/INDEX.HTML">Home</a></li>
+          <li><a href="/page/gallary.html">Gallary</a></li>
+          <li><a href="http://">Events</a></li>
+          <li><a href="http://">About</a></li>
+          <li><a href="http://">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header End -->
+        <!--Slider-->
+        <div id="slider">
+          <div class="slide" style="background: dodgerBlue">
+            <img
+              src="https://img.fotocommunity.com/peacefull-95e65145-d050-4957-9ddc-85dd60689d45.jpg?height=500"
+            />
+          </div>
+    
+          <div class="slide" style="background: coral">
+            <img
+              src="https://render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/2/sunset-storm-haystack-rock-canon-beach-oregon-coast-tl-mair.jpg"
+            />
+          </div>
+    
+          <div class="slide" style="background: crimson">
+            <img
+              src=" https://render.fineartamerica.com/images/images-profile-flow/400/images-medium-large-5/1-tourists-at-eiffel-tower-paris-panoramic-images.jpg"
+            />
+          </div>
+    
+          <div class="slide" style="background: #6edf10">
+            <img
+              src="https://dmasia.travel/wp-content/uploads/2019/09/vit3-1000x350.jpg"
+            />
+          </div>
+    
+          <!--Controlling arrows-->
+          <span class="controls" onclick="prevSlide(-1)" id="left-arrow"
+            ><i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </span>
+          <span class="controls" id="right-arrow" onclick="nextSlide(1)"
+            ><i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </span>
+        </div>
+        <div id="dots-con">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span
+          ><span class="dot"></span>
+        </div>
+    <div class="gallery">
+      <a href="#item-1"><img src="../img/FB_IMG_1703682572685.jpg" alt="404"></a>
+      <a href="#item-2"><img src="../img/magal giri g maharaj.jpg" alt="404"></a>
+    </div>
+    <div class="information">
+      <section class="details" id="item-1">
+        <h1>बाबा भूतनाथ</h1>
+        <p>श्री श्री 1008 श्री बाबा भूतनाथ बाबा जी भव्य मंदिर <span>अहिरोरी ,हरदोई</span></p>
+      </section>
+      <section class="details" id="item-2">
+        <h1>श्री मंगल गिरि जी महाराज</h1>
+        <p>अहिरोरी. <span>हरदोई</span></p>
+      </section>
+      <section class="details" id="item-3">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit. <span>Lorem, ipsum.</span></p>
+      </section>
+      <section class="details" id="item-4">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit. <span>Lorem, ipsum.</span></p>
+      </section>
+    </div>
+    <script src="gallery.js"></script>
+    <footer>
+      &copy; 2023 - MAHARSHI MANGAL GIRI ASHRAM <br />
+      AHIRORI,HARDOI
+    </footer>
+  </body>
+</html>
